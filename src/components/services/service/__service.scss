@@ -1,0 +1,145 @@
+
+.service{
+  font-family: $gotham, sans-serif;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 20px;
+  width: 446px;
+  cursor: pointer;
+  padding-top: 60px;
+  box-sizing: border-box;
+  padding-bottom: 27px;
+  @include media($width-max){
+    padding-left: 60px;
+    height: 270px;
+    width: 50%;
+  }
+  &:nth-child(even){
+    @include media($width-max){
+      padding-left: 114px;
+    }
+  }
+  &:nth-child(od){
+    @include media($width-max){
+      padding-right: 60px;
+    }
+  }
+  &:first-child .main-title{
+    max-width: 185px;
+  }
+  &:nth-child(2) .main-title{
+    max-width: 180px;
+    @include media($width-xxs){
+      max-width: 236px;
+    }
+  }
+  &:nth-child(3) .main-title{
+    max-width: 190px;
+    @include media($width-xxs){
+      max-width: 250px;
+    }
+    @include media($width-max){
+      max-width: 320px;
+    }
+  }
+  &:nth-child(4) .main-title {
+    max-width: 170px;
+    @include media($width-xxs) {
+    max-width: 225px;
+  }
+  }
+  &:nth-child(3):before{
+    @include media($width-max){
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 30px;
+      height: 200px;
+      border-right: 1px dashed #cdcdcf;
+    }
+  }
+  &:hover .services-modal{
+    @include media($width-max){
+      display: block;
+    }
+  }
+  .service-icon {
+    display: inline-block;
+    vertical-align: top;
+    height: 41px;
+    width: 41px;
+    transition: 0.5s;
+    margin-right: 10px;
+    @include media($width-xxs) {
+      margin-right: 26px;
+    }
+  }
+  &:hover .service-icon * {
+    fill: $pinkmain;
+  }
+  .title-box {
+    position: relative;
+    max-width: 446px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    &:before {
+      content: "i";
+      font-size: 14px;
+      line-height: 28px;
+      color: $fonttitle;
+      font-family: $banderabold, sans-serif;
+      text-transform: lowercase;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 2px solid $pinkmain;
+      text-align: center;
+      position: absolute;
+      right: 16px;
+      box-sizing: border-box;
+      top: 10px;
+    }
+    .main-title {
+      text-align: center;
+      display: inline-block;
+      padding-top: 6px;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-family: $gothambold, sans-serif;
+      color: $fonttitle;
+      margin-bottom: 20px;
+      @include media($width-xxs){
+        font-size: 15px;
+        text-align: left;
+      }
+    }
+  }
+    .main-content {
+      padding-left: 67px;
+      .content-title {
+        max-width: 350px;
+      }
+      .content-list {
+        li {
+          max-width: 354px;
+          position: relative;
+          padding-left: 25px;
+          &:before {
+            content: '';
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            border: 2px solid $pinkmain;
+            box-sizing: border-box;
+            position: absolute;
+            left: 1px;
+            top: 7px;
+          }
+        }
+      }
+  }
+  &:hover .title-box:before{
+    background-color: $pinkmain;
+    color: white;
+  }
+}

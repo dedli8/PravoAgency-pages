@@ -1,0 +1,23 @@
+//services style
+.services {
+  position: relative;
+  .services-wrap {
+    border-bottom: 1px solid #f4f4f4;
+    border-top: 1px solid #f4f4f4;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    @include media($width-max) {
+      justify-content: space-between;
+    }
+    @include media($width-max) {
+      .line-throw {
+        position: absolute;
+        top: 270px;
+        width: 100%;
+        border-bottom: 1px dashed #cdcdcf;
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+.services-modal{
+  display: none;
+  padding-left: 15px;
+  margin-bottom: 40px;
+  background-color: white;
+  position: absolute;
+  top: 60px;
+  padding-top: 6px;
+  z-index: 1;
+  height: 85%;
+  width: 50%;
+  padding-right: 93px;
+  box-sizing: border-box;
+  .red-line{
+    height: 200px;
+    width: 0;
+    border-right: 1px solid $pinkmain;
+    position: absolute;
+    .arrow{
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border: solid $pinkmain;
+      transform: rotate(45deg);
+      top: 32px;
+      right: -4px;
+      background-color: white;
+      z-index: 1;
+    }
+  }
+  .block {
+    display: flex;
+  }
+    .name {
+      padding-top: 20px;
+      width: 82px;
+      text-transform: uppercase;
+      font-size: 10px;
+      font-family: $gothamblack, sans-serif;
+    }
+  .name-price{
+    padding-top: 0;
+  }
+    .main-content {
+      flex-grow: 2;
+    }
+    .main-title{
+      font-size: 15px;
+      font-family: $gothambold, sans-serif;
+      text-transform: uppercase;
+      max-width: 230px;
+      margin-bottom: 21px;
+    }
+    .text{
+      font-size: 13px;
+      line-height: 20px;
+      max-width: 365px;
+      text-align: justify;
+      margin-bottom: 28px;
+      strong{
+        font-family: $gothambold, sans-serif;
+      }
+    }
+  .price-wrap{
+    display: flex;
+    justify-content: space-between;
+  }
+    .price-item{
+      .num{
+        font-size: 13px;
+        font-family: $gothambold, sans-serif;
+      }
+      .employee{
+        font-size: 11px;
+        font-family: $gotham, sans-serif;
+        line-height: 11px;
+        margin-bottom: 19px;
+        color: #3f4147;
+      }
+      .price{
+        font-size: 12px;
+        font-family: $gotham, sans-serif;
+        span{
+          font-size: 18px;
+          font-family: $gothambold;
+        }
+        small{
+          font-size: 12px;
+          font-family: $gothambold, sans-serif;
+        }
+      }
+    }
+  .main-btn{
+    margin-top: 29px;
+    width: 130px;
+    height: 45px;
+    line-height: initial;
+  }
+}

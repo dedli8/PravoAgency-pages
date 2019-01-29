@@ -1,0 +1,25 @@
+.title-wrap {
+  padding: 54px 0;
+  .section-title {
+    text-transform: uppercase;
+    &:before {
+      left: 46%;
+      bottom: -18px;
+      @include media($width-max){
+        left: 48.25%;
+      }
+    }
+  }
+  .title-description {
+    max-width: 580px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 15px;
+    line-height: 20px;
+    font-family: $gotham, sans-serif;
+
+    strong {
+      font-weight: bold;
+    }
+  }
+}

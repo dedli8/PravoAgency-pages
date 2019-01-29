@@ -1,0 +1,70 @@
+.review{
+  width: 305px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  &:hover .reviews-icons *{
+    fill: $pinkmain;
+  }
+  &:hover .author{
+    color: $pinkmain;
+    font-family: $gothamblack, sans-serif;
+  }
+  @include media($width-mid){
+    width: 33%;
+    max-width: 305px;
+  }
+  .icon-wrap{
+    height: 25px;
+    line-height: 30px;
+    margin-bottom: 14px;
+  }
+  .reviews-icons{
+    height: 15px;
+  }
+  .yt{
+    height: 25px;
+  }
+  .main-content{
+    font-family: $gotham, sans-serif;
+    font-size: 17px;
+    line-height: 25px;
+  }
+  .author{
+    font-family: $gothambold, sans-serif;
+    font-size: 13px;
+    margin-bottom: 14px;
+    margin-top: 15px;
+  }
+  .avatar{
+    margin-top: 10px;
+    @include media($width-xs){
+      margin-top: 34px;
+    }
+  }
+  .field-wrap>*{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .field{
+    font-size: 12px;
+    font-family: $gotham, sans-serif;
+  }
+  .red-dot{
+    margin: 0 5px;
+    width: 3px;
+    height: 3px;
+    background-color: $pinkmain;
+  }
+  .company{
+    font-size: 12px;
+    font-family: $gothambold, sans-serif;
+  }
+  .yt-container{
+    width: 100%;
+    @include media($width-xs){
+      padding-top: 7px;
+      width: auto;
+      height: 197px;
+    }
+  }
+}

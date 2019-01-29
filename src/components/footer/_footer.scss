@@ -1,0 +1,57 @@
+//footer styles
+.footer{
+  padding: 30px 0;
+  text-align: center;
+
+.name{
+  font-family: $gothamblack, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  font-size: 11px;
+}
+  address{
+    font-family: $gotham, sans-serif;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 30px;
+    .email{
+      color: $pinkmain;
+      border-bottom: 1px solid $pinkmain;
+      line-height: 18px;
+    }
+  }
+  .socials{
+    margin-bottom: 26px;
+    .item{
+      display: inline-block;
+      vertical-align: middle;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      box-sizing: border-box;
+      border: 1px solid #dddddd;
+      line-height: 38px;
+      margin-right: 7px;
+      &:last-child{
+        margin-right: 0;
+      }
+      &:hover{
+        border: 2px solid #5373bc;
+        line-height: 36px;
+      }
+      &:hover .footer-icons *{
+        fill: #5373bc;
+      }
+      .footer-icons{
+        height: 12px;
+      }
+    }
+  }
+  .copyrights{
+    font-size: 12px;
+    font-family: $gotham, sans-serif;
+    span {
+      font-family: $gothamblack, sans-serif;
+    }
+  }
+}

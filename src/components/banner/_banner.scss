@@ -1,0 +1,133 @@
+//banner styles
+.banner{
+  padding: 75px 0 60px 0;
+  position: relative;
+  &-wrap{
+    padding-left: 20px;
+    @include media($width-xs){
+      padding-left: 57px;
+    }
+  }
+  .main-header{
+    font-size: 30px;
+    color: #454545;
+    margin-bottom: 58px;
+    line-height: 35px;
+    @include media($width-sm){
+      width: 305px;
+      text-align: left;
+    }
+    &:before{
+      bottom: -31px;
+      left: 45%;
+      @include media($width-xs){
+        left: 0;
+      }
+    }
+  }
+  .text{
+    width: auto;
+    font-size: 15px;
+    font-family: $gotham, sans-serif;
+    line-height: 24px;
+    @include media($width-sm){
+      width: 450px;
+    }
+    &:first-of-type{
+      margin-bottom: 24px;
+    }
+    &:last-of-type{
+      margin-bottom: 57px;
+    }
+    strong{
+      font-weight: bold;
+    }
+  }
+  .main-btn {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 22px;
+    box-sizing: border-box;
+    transition: 0.25s;
+    @include media($width-xs){
+      margin: 0;
+    }
+    &:before {
+      content: '\279C';
+      font-size: 10px;
+      line-height: 19px;
+      position: absolute;
+      left: 15px;
+      top: 12px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      border: 2px solid white;
+      transform: rotate(90deg);
+      box-sizing: border-box;
+    }
+  }
+  .btn-to-feedbackform{
+    display: none;
+    position: absolute;
+    top: 128px;
+    left: 378px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: white;
+    transform: rotate(90deg) translate(-50%, -50%);
+    transition: background-color 0.5s;
+    @include media($width-sm){
+      display: block;
+    }
+    @include media($width-max){
+      top: 227px;
+      left: 543px;
+    }
+    &:hover{
+      background-color: $pinkmain;
+    }
+    .triangle {
+      position: relative;
+      top: -50px;
+      left: 37px;
+      margin-top: 100px;
+      width: 20px;
+    }
+    .triangle>div {
+      width: 20px;
+      height: 3px;
+      background: $pinkmain;
+      transition: background-color 0.5s;
+    }
+
+    .triangle>div:before, .triangle>div:after {
+      content: " ";
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: $pinkmain;
+      transform: rotate(56deg);
+      position: absolute;
+      top: -8px;
+      right: -5px;
+      transition: background-color 0.5s;
+    }
+    .triangle>div:after {
+      transform: rotate(-56deg);
+      left: -5px;
+      right: initial;
+    }
+    &:hover .triangle>div{
+      background-color: white;
+    }
+    &:hover .triangle>div:after{
+      background-color: white;
+    }
+    &:hover .triangle>div:before{
+      background-color: white;
+    }
+  }
+}

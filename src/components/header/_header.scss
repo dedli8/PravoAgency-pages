@@ -1,0 +1,84 @@
+//header styles
+.header {
+  padding-top: 45px;
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    @include media($width-xs){
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+  }
+  .logo {
+    width: 110px;
+    margin-right: 80px;
+    @include media($width-xs){
+      margin-right: 0;
+      padding-left: 57px;
+    }
+  }
+  .main-menu{
+   font-size: 0;
+    text-align: center;
+    order: 3;
+    margin-top: 20px;
+    width: 100%;
+    @include media($width-xs){
+      margin-top: 0;
+      order: initial;
+      flex-grow: 2;
+      padding-right: 2%;
+      text-align: right;
+      width: auto;
+    }
+    @include media($width-sm) {
+      padding-right: 10.7%;
+    }
+    .item {
+      text-transform: uppercase;
+      color: $fonttitle;
+      font-size: 11.75px;
+      font-family: $gothammed, sans-serif;
+      margin-right: 3.9%;
+      &:last-child{
+        margin-right: 0;
+      }
+      &:hover {
+        color: $pinkmain;
+      }
+    }
+  }
+  .lang-toggle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    width: 68px;
+    height: 34px;
+    border: 2px solid #dfdfe2;
+    box-sizing: border-box;
+    padding: 7px;
+    cursor: pointer;
+    .item{
+      display: inline-block;
+      vertical-align: middle;
+      font-family: $gothamblack, sans-serif;
+      color: $pinkmain;
+      border-radius: 50%;
+      width: 17px;
+      height: 17px;
+      background-color: #dfdfe2;
+      text-transform: uppercase;
+      font-size: 0;
+      line-height: 17px;
+    }
+    .active{
+background-color: inherit;
+      font-size: 11px;
+      width: 50%;
+      text-align: center;
+    }
+  }
+}

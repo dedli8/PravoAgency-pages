@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Header from './components/header/Header';
+import Header from './components/layout/header/Header';
 import Banner from './components/banner/Banner';
 import Services from './components/services/Services';
 import Reviews from './components/reviews/Reviews';
 import Feedbackform from './components/feedbackform/Feedbackform';
-import Footer from './components/footer/Footer';
+import Footer from './components/layout/footer/Footer';
 import './App.scss';
 import {Provider} from './context'
 

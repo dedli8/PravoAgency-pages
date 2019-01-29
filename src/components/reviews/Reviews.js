@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Mainheader from '../mainheader/Mainheader'
+import Maintitle from '../layout/maintitle/Maintitle'
 import Review from './review/Review'
 import Download from './icons/Download'
 import {Consumer} from "../../context";
@@ -24,7 +24,7 @@ class Reviews extends Component {
                     const items = reviews.slice(0, this.state.showItems);
                     return (
                         <section className='reviews-section' id='reviews'>
-                            <Mainheader title={title} description={description} strong={strong} key={key}/>
+                            <Maintitle title={title} description={description} strong={strong} key={key}/>
                             <div className="container">
                                 <div className="reviews-wrap">
                                     {items.map((review, index) => <Review review={review} key={index}/>)}

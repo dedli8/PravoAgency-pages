@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-class Mainheader extends Component {
+class Maintitle extends Component {
     render() {
         const {title, description, strong} = this.props;
         return (
@@ -13,4 +13,4 @@ class Mainheader extends Component {
     }
 }
 
-export default Mainheader;
+export default Maintitle;

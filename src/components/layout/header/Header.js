@@ -1,19 +1,17 @@
-import React, {Component} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import logo from '../../assets/img/Logo.svg';
-import {Consumer} from "../../context";
+import logo from '../../../assets/img/Logo.svg';
+import {Consumer} from "../../../context";
 
-class Header extends Component {
-    toggleLang = (dispatch) => {
+const Header = () => {
+    const toggleLang = (dispatch) => {
         dispatch({type: 'TOGGLE_LANG'});
     };
-        render() {
-        return (
-            <Consumer>
-                {value => {
-                    const {uaLang} = value;
-                    const { dispatch } = value;
-                    return(
+    return (
+        <Consumer>
+            {value => {
+                const {uaLang, dispatch} = value;
+                return(
                     <header className="header">
                         <div className="container">
                             <a href="/">
@@ -22,20 +20,17 @@ class Header extends Component {
                                 <a href="#services" className="item">услуги и цены</a><a href="#reviews" className="item">отзывы</a><a href="#footer"
                                                                                                                                        className="item">контакты</a>
                             </nav>
-                            <div className="lang-toggle" onClick= { this.toggleLang.bind(this, dispatch) } >
+                            <div className="lang-toggle" onClick= { toggleLang.bind(this, dispatch) } >
                                 <div className={'item '+(uaLang ? "active" : "")}>ua</div>
                                 <div className={'item '+(uaLang ? "" : "active")}>ru</div>
                             </div>
                         </div>
                     </header>
-                    )
-                }
-                }
-            </Consumer>
-        );
-    }
-}
-
-Header.propTypes = {};
+                )
+            }
+            }
+        </Consumer>
+    );
+};
 
 export default Header;

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Mainheader from '../mainheader/Mainheader'
+import Maintitle from '../layout/maintitle/Maintitle'
 import Service from './service/Service';
 import {Consumer} from "../../context";
 
@@ -12,7 +12,7 @@ class Services extends Component {
                     const {title, description, strong, key} = value.servicesTitledata;
                     return (
                         <section className="services" id="services">
-                            <Mainheader title={title} description={description} strong={strong} key={key}/>
+                            <Maintitle title={title} description={description} strong={strong} key={key}/>
                             <div className="container">
                                 <div className="services-wrap">
                                     {services.map((service, index) =>

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Mainheader from "../mainheader/Mainheader";
+import Maintitle from "../layout/maintitle/Maintitle";
 import {Consumer} from "../../context";
 
 class Feedbackform extends Component {
@@ -36,7 +36,7 @@ class Feedbackform extends Component {
                     const {title, key} = value.feedbackTitledata;
                     return (
                         <section className="feedback" id='feedbackform'>
-                            <Mainheader title={title} key={key}/>
+                            <Maintitle title={title} key={key}/>
                             <div className="container">
                                 <form className="form" onSubmit={this.onSubmit}>
                                     <div className="left">

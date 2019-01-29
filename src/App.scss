@@ -46,8 +46,8 @@ color: $fontmain;
     transform: translateY(-0.25em);
   }
 }
-@import "./components/header/_header";
-@import "components/mainheader/mainheader";
+@import "components/layout/header/_header";
+@import "components/layout/maintitle/maintitle";
 @import "./components/banner/_banner";
 @import "./components/services/_services";
 @import "./components/services/service/_service";
@@ -55,4 +55,4 @@ color: $fontmain;
 @import "./components/reviews/_reviews";
 @import "./components/reviews/review/_review";
 @import "./components/feedbackform/_feedbackform";
-@import "./components/footer/_footer";
+@import "components/layout/footer/_footer";

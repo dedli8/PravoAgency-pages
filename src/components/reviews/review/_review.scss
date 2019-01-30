@@ -2,6 +2,8 @@
   width: 305px;
   margin-bottom: 50px;
   cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
   &:hover .reviews-icons *{
     fill: $pinkmain;
   }

@@ -1,8 +1,7 @@
-import React, {Component} from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
+import {Link} from 'react-router-dom';
 
-class Banner extends Component {
-    render() {
+const Banner = () => {
         return (
             <section className="banner">
                 <div className="container">
@@ -14,20 +13,17 @@ class Banner extends Component {
                         другие
                         IT-специалисты не уделяют должного внимания правовым аспектам своей деятельности.</p><p
                     className="text">Но <strong>документы должны быть в порядке </strong>, и мы в этом поможем.</p>
-                    <a href="#services" className="main-btn">услуги и цены</a>
-                    <a href="#feedbackform" className="btn-to-feedbackform">
+                    <Link to="/services" className="main-btn">услуги и цены</Link>
+                    <Link to="/feedbackform" className="btn-to-feedbackform">
                         <div className="triangle">
                             <div>
                             </div>
                         </div>
-                    </a>
+                    </Link>
                 </div>
                 </div>
             </section>
-        );
-    }
-}
-
-Banner.propTypes = {};
+        )
+};
 
 export default Banner;

@@ -1,8 +1,6 @@
-import React, {Component} from 'react';
-import Services from "../Services";
+import React from 'react';
 
-class Case extends Component {
-    render() {
+const Case = () => {
         return (
         <svg width="40pt" height="41pt" viewBox="0 0 40 41" version="1.1" xmlns="http://www.w3.org/2000/svg" className='service-icon'>
             <g id="#8c8e93d8">
@@ -16,6 +14,5 @@ class Case extends Component {
             </g>
         </svg>
     );
-    }
-}
+};
 export default Case;

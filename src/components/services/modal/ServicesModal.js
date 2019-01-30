@@ -1,8 +1,7 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-class ServicesModal extends Component {
-    render() {
-        const {title, text, price1, price2, price3, num1, num2, num3, modalStyle, redLineStyle, redArrowStyle} = this.props.modalData;
+const ServicesModal = (props) => {
+        const {title, text, price1, price2, price3, num1, num2, num3, modalStyle, redLineStyle, redArrowStyle} = props.modalData;
         return (
             <div className='services-modal' style={modalStyle}>
                 <div className="red-line" style={redLineStyle}><div className="arrow" style={redArrowStyle}></div></div>
@@ -38,7 +37,6 @@ class ServicesModal extends Component {
                 </div>
             </div>
         );
-    }
-}
+    };
 
 export default ServicesModal;

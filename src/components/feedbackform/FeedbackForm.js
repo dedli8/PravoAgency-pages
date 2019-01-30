@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
-import Maintitle from "../layout/maintitle/Maintitle";
-import {Consumer} from "../../context";
+import MainTitle from "../layout/maintitle/MainTitle";
 
-class Feedbackform extends Component {
+class FeedbackForm extends Component {
     state = {
         name: '',
         phone: '',
@@ -27,16 +26,20 @@ class Feedbackform extends Component {
             this.setState({errors: {email: "Email is required"}});
             return;
         }
+        this.setState({
+                name: '',
+                phone: '',
+                email: '',
+                cite: '',
+                errors: {}
+        });
+        this.props.history.push('/')
     };
     render() {
         const {name, phone, email, cite, errors} = this.state;
-        return (
-            <Consumer>
-                {value => {
-                    const {title, key} = value.feedbackTitledata;
                     return (
                         <section className="feedback" id='feedbackform'>
-                            <Maintitle title={title} key={key}/>
+                            <MainTitle title="запрос на услуги"/>
                             <div className="container">
                                 <form className="form" onSubmit={this.onSubmit}>
                                     <div className="left">
@@ -94,9 +97,4 @@ class Feedbackform extends Component {
                     )
                 }
                 }
-            </Consumer>
-        )
-    }
-}
-
-export default Feedbackform;
+export default FeedbackForm;

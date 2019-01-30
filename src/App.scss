@@ -4,15 +4,17 @@
 @import "/assets/scss/reset";
 body{
 color: $fontmain;
+  background: url("./assets/img/mainbg.jpg") left top no-repeat #f5f5f5;
+  background-size: cover;
+  @include media($width-max){
+    background-position: center top;
+    background-size: auto;
+  }
 }
 .container{
   max-width: 1120px;
   margin: 0 auto;
   padding: 0 20px;
-}
-.header-banner-wrap{
-  background: url("./assets/img/mainbg.jpg") left top;
-  background-size: cover;
 }
 .main-header{
   position: relative;
@@ -48,11 +50,11 @@ color: $fontmain;
 }
 @import "components/layout/header/_header";
 @import "components/layout/maintitle/maintitle";
-@import "./components/banner/_banner";
-@import "./components/services/_services";
-@import "./components/services/service/_service";
-@import "./components/services/modal/_servicesmodal";
+@import "components/banner/_banner";
+@import "components/services/_services";
+@import "components/services/service/_service";
+@import "components/services/modal/_servicesmodal";
 @import "./components/reviews/_reviews";
 @import "./components/reviews/review/_review";
-@import "./components/feedbackform/_feedbackform";
+@import "components/feedbackform/_feedbackform";
 @import "components/layout/footer/_footer";

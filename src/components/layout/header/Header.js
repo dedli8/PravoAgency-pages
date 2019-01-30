@@ -1,7 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import logo from '../../../assets/img/Logo.svg';
 import {Consumer} from "../../../context";
+import {Link} from "react-router-dom";
 
 const Header = () => {
     const toggleLang = (dispatch) => {
@@ -14,10 +14,10 @@ const Header = () => {
                 return(
                     <header className="header">
                         <div className="container">
-                            <a href="/">
-                                <img src={logo} className="logo" alt="logo"/></a>
+                            <Link to="/">
+                                <img src={logo} className="logo" alt="logo"/></Link>
                             <nav className="main-menu">
-                                <a href="#services" className="item">услуги и цены</a><a href="#reviews" className="item">отзывы</a><a href="#footer"
+                                <Link to="/services" className="item">услуги и цены</Link><Link to="/reviews" className="item">отзывы</Link><a href="#footer"
                                                                                                                                        className="item">контакты</a>
                             </nav>
                             <div className="lang-toggle" onClick= { toggleLang.bind(this, dispatch) } >

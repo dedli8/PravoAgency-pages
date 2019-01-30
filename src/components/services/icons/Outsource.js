@@ -1,7 +1,6 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-class Outsource extends Component {
-    render() {
+const Outsource = () => {
         return (
             <svg width="40pt" height="39pt" viewBox="0 0 40 39" version="1.1" xmlns="http://www.w3.org/2000/svg" className="service-icon">
                 <g id="#8b8d92d6">
@@ -16,7 +15,5 @@ class Outsource extends Component {
                 </g>
             </svg>
         );
-    }
-}
-
+};
 export default Outsource;

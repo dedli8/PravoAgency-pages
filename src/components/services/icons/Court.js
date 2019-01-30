@@ -1,8 +1,6 @@
-import React, {Component} from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
 
-class Court extends Component {
-    render() {
+const Court = () => {
         return (
             <svg width="42pt" height="42pt" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" className="service-icon">
                 <g id="#a6a8aeff">
@@ -12,9 +10,6 @@ class Court extends Component {
             </svg>
 
         );
-    }
-}
-
-Court.propTypes = {};
+};
 
 export default Court;

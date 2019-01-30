@@ -1,7 +1,6 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-class Optimization extends Component {
-    render() {
+const Optimization = () => {
         return (
             <svg width="42pt" height="42pt" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" className="service-icon">
                 <g id="#85868bcc">
@@ -9,7 +8,6 @@ class Optimization extends Component {
                 </g>
             </svg>
         );
-    }
-}
+};
 
 export default Optimization;

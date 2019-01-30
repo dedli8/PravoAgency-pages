@@ -5,6 +5,7 @@ import MainPage from './components/pages/MainPage';
 import Services from './components/services/Services';
 import FeedbackForm from './components/feedbackform/FeedbackForm';
 import Reviews from './components/reviews/Reviews';
+import NotFound from './components/pages/NotFound';
 import Footer from './components/layout/footer/Footer';
 import './App.scss';
 import {Provider} from './context'
@@ -22,6 +23,7 @@ class App extends Component {
                   <Route exact path="/services" component={Services}></Route>
               <Route exact path="/feedbackform" component={FeedbackForm}></Route>
               <Route exact path="/reviews" component={Reviews}></Route>
+              <Route component={NotFound}></Route>
               </Switch>
           <Footer/>
       </div>

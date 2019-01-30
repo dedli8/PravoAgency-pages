@@ -48,6 +48,22 @@ color: $fontmain;
     transform: translateY(-0.25em);
   }
 }
+.not-found{
+  margin-top: 200px;
+  text-align: center;
+  color: darkred;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: $gothambold;
+  margin-bottom: 50px;
+}
+.not-found-description{
+  text-align: center;
+  font-family: $gothambold;
+  font-size: 30px;
+  margin-bottom: 200px;
+}
 @import "components/layout/header/_header";
 @import "components/layout/maintitle/maintitle";
 @import "components/banner/_banner";
